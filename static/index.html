@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Music Smoker</title>
+		<!-- En la parte de head defino lo que ira en la tab del browser  -->
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+<body>
+    <header>
+        <div class = "row text-center">
+            <div class = "col-sm-5" id="branding">
+                <h1>Music Smoker</h1>
+            </div>
+            <div class = "col-sm-7">
+                <nav>
+                    <ul>    
+                        <li><a href="#Estilo1" id="Explore">Explore</a></li>
+                        <li><a href="#Login" id="Login">Login</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </div>
+    </header>
+    <div class = "row text-center">
+        <div class = "col-sm-12" >
+                <section id="showcase">
+                        <h1>Explore, Discover And Share Music</h1>
+                        <p>“Without music, life would be a mistake” ― Friedrich Nietzsche</p>
+                        <p>“Music is the strongest form of magic.” ― Marilyn Manson</p>
+                        <p>“Music is the wine that fills the cup of silence.” ― Robert Fripp</p>
+                </section>
+        </div>
+    </div>
+    <div class = "row text-center" id="newsletter">
+            <div class = "col-sm-5" >
+                    <h1>My Playlists</h1>
+            </div>
+            <div class = "col-sm-7" >
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <a href="./agregar.html" class="btn btn-secondary">CREATE</a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          DELETE
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#LatinaD" onclick="accion1()" id="Accion1">LATINAS</a>
+                          <a class="dropdown-item" href="#RockD" onclick="accion2()" id="Accion2">ROCK</a>
+                          <a class="dropdown-item" href="#RadioMusicD" onclick="accion3()" id="Accion3">RADIO MUSIC</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          EDIT
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#LatinaM">LATINA</a>
+                            <a class="dropdown-item" href="#RockM">ROCK</a>
+                            <a class="dropdown-item" href="#RadioMusicM">RADIO MUSIC</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class = "row" id="boxes">
+            <div class="col-sm-4" id="cards1">
+                    <div class="card text-center" id="boxes">
+                            <div class="card-header">
+                              Latinas
+                            </div>
+                            <div class="card-body">
+                                    <div class="box">
+                                            <img src="./img/Latin_Music.jpg">
+                                    </div>
+                            </div>
+                            <div class="card-footer">
+                                    <p>Music in spanish, you can find a lot of genres such as Salsa, Merengue, Bachata, Reggaeton, Pop.</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-sm-4" id="cards2">
+                    <div class="card text-center" id="boxes">
+                            <div class="card-header">
+                              Rock
+                            </div>
+                            <div class="card-body">
+                                <div class="box">
+                                        <img src="./img/Rock.jpg">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                    <p>These songs rocked the 90s, will find something from Nirvana, Oasis, Green Day and more.</p>
+                            </div>
+                          </div>
+            </div>
+            <div class="col-sm-4" id="cards3">
+                    <div class="card text-center" id="boxes">
+                            <div class="card-header">
+                                Radio Music
+                            </div>
+                            <div class="card-body">
+                                <div class="box">
+                                        <img src="./img/Radio_Music.jpg">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                    <p>To stay updated with the lastest music on the market. Songs from 2015 to 2018</p>
+                            </div>
+                          </div>
+            </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Laboratorio 0 Music Smoker, Copyright &copy; 2018, Estuardo Estrada</p>  
+            </div> 
+        </div>
+    </footer>
+    <script src="./js/jquery-3.3.1.min.js " type="text/javascript "></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/popper.min.js "></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
