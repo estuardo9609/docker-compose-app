@@ -1,5 +1,15 @@
 version: '3'
 services:
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    depends_on:
+      - static
+      - app
+    ports:
+      - "80:80"
+    restart: always
   app:
     build: 
       context: ./app
@@ -11,8 +21,6 @@ services:
     - REDIS_PORT=6379
     volumes:
       - ./app:/src
-    ports:
-      - 3000:3000
   redis:
     image: redis
   static:
